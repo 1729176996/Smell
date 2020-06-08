@@ -1,0 +1,44 @@
+#main{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+}
+#ditu{
+	width: 100%;
+	flex: 1;
+	z-100;
+}
+.biaodian{
+	width: 12px;height: 16.5px;position: relative;
+}
+.biaodian-icon{
+	width: 100%;height: 100%;
+}
+.biaodian-text{
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	width: 60px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 5px;
+}
+
+#walking{
+	width: 400px;
+	height: 400px;
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	z-index: 130;
+	display: none;
+}
+#walking dt{
+	background-color: #FFFFFF;
+}
