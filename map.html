@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/map.css"/>
 </head>
 <body>
 	<div id="main">
-		<ul>
-			<li @click="map">地图</li>
-		</ul>
+		<div class="header" @click="back">返回</div>
+		<div id="ditu"></div>
+		<div id="walking"></div>
 	</div>
 </body>
 <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/map.js" type="text/javascript" charset="utf-8"></script>
 </html>
