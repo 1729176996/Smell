@@ -7,7 +7,12 @@ $(function(){
 			}
 		},
 		mounted(){
-			checkVersion();
+			
+		},
+		beforeCreate() {
+		  document.addEventListener("plusready",function(){
+			  checkVersion();
+		  });
 		},
 		methods: {
 			map() {

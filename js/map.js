@@ -67,9 +67,6 @@
 		}
 		
 		document.addEventListener('plusready', function() {
-			
-			checkVersion();
-			
 			getCurrentPosition(true);
 			setInterval(function(){
 				getCurrentPosition(true);
