@@ -1,11 +1,11 @@
-var version_url = 'https://1729176996.github.io/Smell/';
+var version_url = 'https://1729176996.github.io/Smell';
 function checkVersion(){
 	// 检查当前版本，与从后台获取的版本作比较，以此判断是否更新
 	plus.runtime.getProperty(plus.runtime.appid,function(inf){
 		// 当前版本
 		var wgtVersion = inf.version;
 		$.ajax({
-			url:version_url+'version.json',
+			url:version_url+'/version.json',
 			type:'get',
 			dataType: 'json',
 			success:function(data){
@@ -31,7 +31,7 @@ function checkVersion(){
 // 下载wgt方法
 function downloadWgt(){
 	// 更新文件 wgt 文件地址
-	var wgtUrl = version_url+"update.wgt";
+	var wgtUrl = version_url+"/update.wgt";
     plus.nativeUI.showWaiting("正在更新...");
     plus.downloader.createDownload( wgtUrl, {filename:"_doc/update/"}, function(d,status){
      if ( status == 200 ) {
